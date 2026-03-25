@@ -37,22 +37,22 @@ class TestApp(unittest.TestCase):
     # Uncomment and complete these tests if you implement
     # the below routes
 
-    # def test_multiply_endpoint(self):
-    #     # Prepare test data
-    #     payload = json.dumps({
-    #         "number_1": 4,
-    #         "number_2": 5
-    #     })
-    #
-    #     # TODO: Get Response from API endpoint '/api/multiply'
-    #     # response = self.client.post('/api/multiply', data=payload,
-    #     #                             content_type='application/json')
-    #
-    #     # TODO: Assert equals if API response is OK (200)
-    #     # self.assertEqual(response.status_code, 200)
-    #
-    #     # TODO: Assert equals if API response 'result' is 20 (4 * 5)
-    #     # self.assertEqual(response.json, {"result": 20})
+    def test_multiply_endpoint(self):
+        # Prepare test data
+        payload = json.dumps({
+            "number_1": 4,
+            "number_2": 5
+        })
+    
+        # TODO: Get Response from API endpoint '/api/multiply'
+        response = self.client.post('/api/multiply', data=payload,
+                                    content_type='application/json')
+    
+        # TODO: Assert equals if API response is OK (200)
+        self.assertEqual(response.status_code, 200)
+    
+        # TODO: Assert equals if API response 'result' is 20 (4 * 5)
+        self.assertEqual(response.json, {"result": 20})
 
     # def test_subtract_endpoint(self):
     #     # Write test code here

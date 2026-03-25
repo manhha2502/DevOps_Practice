@@ -45,7 +45,7 @@ def add():
 
 # TODO: Add more routes and operations! Create your own calculator!
 # For example:
-# - Square root
+# - Square rootgit
 # - Exponentiation
 # - Trigonometric functions (sin, cos, tan)
 # - Logarithms

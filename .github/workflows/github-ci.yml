@@ -10,11 +10,13 @@ name: Python CI/CD Pipeline
 #  pull_request:
 on:
   push:
+    paths:
+      - '**.py'  # Trigger on changes to Python files
     # Example of how to trigger on push to 'main' or 'develop' branches
-    # branches: [ main, develop ]
+    branches: [ main, develop ]
   pull_request:
     # Example of how to trigger on push to 'main' or 'develop' branches
-    # branches: [ main, develop ]
+    branches: [ main, develop ]
   workflow_dispatch: # Allow manual job trigger of the workflow from GitHub Actions UI
 
 jobs:
